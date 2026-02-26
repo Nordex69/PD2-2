@@ -10,7 +10,6 @@ partitions = [
     "Win-System;/mnt/win;100000;90",
     "Recovery;/recovery; 2000;98"
 ]
-
 def get_used_space(plist):
     res = []
     for p in plist:
@@ -20,3 +19,4 @@ def get_used_space(plist):
     return res
 
 print(get_used_space(partitions))
+
